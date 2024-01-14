@@ -24,8 +24,8 @@
             <nav class="navbar">
                 <a href="#home" class="active">Home</a>
                 <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
+                <a href="#certificates">Achievements</a>
+                <a href="#portfolio">Projects</a>
                 <a href="#contact">Contact</a>
             </nav>
         </header>
@@ -37,9 +37,7 @@
                 <h1>Sagar Puppala</h1>
                 <!-- <h3>And I'm a <span>Student</span></h3> -->
                 <h3>And I'm a <span class="multiple-text"></span></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Impedit exercitationem atque aliquam 
-                    sint dolorem vel quia molestias.</p>
+                <h3>Explore my digital space where curiosity meets code.</h3>
                 <div class="social-media">
                     <a href="https://github.com/Puppala-Sagar"><i class='bx bxl-github' ></i></a>
                     <a href="#"><i class='bx bxl-linkedin' ></i></a>
@@ -50,7 +48,7 @@
             </div>
 
             <div class="home-img">
-                <img src="images\aboutimg.jpg" alt="">
+                <img src="images\xyz.jpg" alt="">
             </div>
         </section>
 
@@ -73,37 +71,166 @@
             </div>
         </section>
 
-        <!-- services section design -->
-        <section class="services" id="services">
-            <h2 class="heading">Our <span>Services</span></h2>
-
-            <div class="services-container">
-                <div class="services-box">
+        <!-- certificates section design -->
+        <section class="certificates" id="certificates">
+            <h2 class="heading">My <span>Achievements</span></h2>
+            <div class="certificates-container">
+                <div class="certificates-box">
                     <i class='bx bx-code-alt' ></i>
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos 
-                        necessitatibus, incidunt veniam delectus nisi accusamus iure 
-                        velit nobis eius. Dolorem!</p>
-                    <a href="#" class="btn">Read More</a>
+                    <h3>Best First Year Team</h3>
+                    <p>In my inaugural year, my healthcare project stood out, catapulting our team to the coveted title of <span>'Best First-Year Team'</span> 
+                        a testament to our exceptional achievements in Semester 1.
+                    </p>
+                    <!-- <a href="certificates\inov8.pdf" class="btn">View Certificate</a> -->
+                    <button class="btn" onclick="showCertificate1()">View Certificate</button>
+
+
+                    <!-- Certificate popup -->
+                    <div class="certifiactePopup-container" id="certificatePopup1" style="left:500px">
+                        <div class="certifiactePopup-content" >
+                            <button style="font-size: 2px;font-weight: 2px;color:var(--main-color);background-color: var(--second-bg-color);border-radius: 50%;" 
+                            onclick="closeCertificate1()"><i class='bx bx-x'></i></button>
+                            <h1 style="font-size: 25px;">Inov8<span> Certificate</span></h1>
+                            <img src="images\inov8.jpg"  alt="" style="height: 400px;width:800px">
+
+                        </div>
+                    </div>
+
+
+                    <br>
+                    <br>
+                    <button class="btn" onclick="showProjectPopup1()">TechStack Used</button>
+
+                    <!-- Project Popup Container -->
+                    <div id="projectPopup1" class="popup-container">
+                        <div class="popup-content">
+                            <button style="font-size: 2px;font-weight: 2px;color:var(--main-color);background-color: var(--second-bg-color);border-radius: 50%;" 
+                            onclick="closeProjectPopup1()"><i class='bx bx-x'></i></button>
+                            <p>Technical Stack Used</p>
+                            <div class="Tech-content">
+                                <div class="html">
+                                    <i style="color:#c95d2e" class='bx bxl-html5' ></i>
+                                    <h2>HTML</h2>
+                                </div>
+                                <div class="html">
+                                    <i style="color:#147bbc" class='bx bxl-css3' ></i>
+                                    <h2>CSS</h2>
+                                </div>
+                                <div class="html">
+                                    <i style="color:#b0bc1e" class='bx bxl-javascript' ></i>
+                                    <h2>JavaScript</h2>
+                                </div>
+                                </div>    
+                        </div>
+                    </div>
                 </div>
        
-                <div class="services-box">
+                <div class="certificates-box">
                     <i class='bx bxs-paint' ></i>
-                    <h3>Graphic Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos 
-                        necessitatibus, incidunt veniam delectus nisi accusamus iure 
-                        velit nobis eius. Dolorem!</p>
-                    <a href="#" class="btn">Read More</a>
+                    <h3>Code Purple Triumph</h3>
+                    <p>Revealing groundbreaking software innovation, our project at <span>CODE PURPLE Project 
+                        EXPO organized by IEEE WIE MJCET
+                        secured 1st prize</span>, reshaping excellence in software development.</p>
+                    <!-- <a href="certificates\mjcet.pdf" class="btn">View Certificate</a> -->
+                    <button class="btn" onclick="showCertificate2()">View Certificate</button>
+
+
+                    <!-- Certificate popup -->
+                    <div class="certifiactePopup-container" id="certificatePopup2" style="left:100px">
+                        <div class="certifiactePopup-content">
+                            <button style="font-size: 2px;font-weight: 2px;color:var(--main-color);background-color: var(--second-bg-color);border-radius: 50%;" 
+                            onclick="closeCertificate2()"><i class='bx bx-x'></i></button>
+                            <h1 style="font-size: 25px;">Code Purple <span>Certificate</span></h1>
+                            <img src="images\mjcetimg.jpg"  alt="" style="height: 400px;width:800px">
+
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+                    <button class="btn" onclick="showProjectPopup2()">TechStack Used</button>
+
+                    <!-- Tech Stack Popup Container -->
+                    <div id="projectPopup2" class="popup-container">
+                        <div class="popup-content">
+                            <button style="font-size: 2px;font-weight: 2px;color:var(--main-color);background-color: var(--second-bg-color);border-radius: 50%;" 
+                            onclick="closeProjectPopup2()"><i class='bx bx-x'></i></button>
+                            <p>Technical Stack Used</p>
+                            <div class="Tech-content">
+                                <div class="html">
+                                    <i style="color:#c95d2e" class='bx bxl-html5' ></i>
+                                    <h2>HTML</h2>
+                                </div>
+                                <div class="html">
+                                    <i style="color:#147bbc" class='bx bxl-css3' ></i>
+                                    <h2>CSS</h2>
+                                </div>
+                                <div class="html">
+                                    <i style="color:#b0bc1e" class='bx bxl-javascript' ></i>
+                                    <h2>JavaScript</h2>
+                                </div>
+                                <div class="html">
+                                    <i style="color:#c32ec9" class='bx bxl-python' ></i>
+                                    <h2>Python</h2>
+                                </div>
+                                </div>    
+                        </div>
+                    </div>
                 </div>
 
-                <div class="services-box">
-                    <i class='bx bx-bar-chart-alt' ></i>
-                    <h3>Digital Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos 
-                        necessitatibus, incidunt veniam delectus nisi accusamus iure 
-                        velit nobis eius. Dolorem!</p>
-                    <a href="#" class="btn">Read More</a>
+                <div class="certificates-box">
+                    <i class='bx bx-bar-chart-alt'></i>
+                    <h3>Elevating Excellence</h3><br>
+                    <p>Claimed <br><span>Successive 1st Prizes</span><br> in Physics and Python Realms at KMIT's Prakalp Project Expo, 
+                        Elevating Innovation to New Heights.</p>
+                    <!-- <a href="certificates\prakalp.pdf" class="btn">View Certificate</a> -->
+                    <button class="btn" onclick="showCertificate3()">View Certificate</button>
+
+
+                    <!-- Certificate popup -->
+                    <div class="certifiactePopup-container" id="certificatePopup3" style="right:500px">
+                        <div class="certifiactePopup-content">
+                            <button style="font-size: 2px;font-weight: 2px;color:var(--main-color);background-color: var(--second-bg-color);border-radius: 50%;" 
+                            onclick="closeCertificate3()"><i class='bx bx-x'></i></button>
+                            <h1 style="font-size: 25px;">Prakalp <span>Certificate</span></h1>
+                            <img src="images\prakalp.png"  alt="" style="height: 400px;width:800px">
+
+                        </div>
+                    </div>
+
+
+                    <br>
+                    <br>
+                    <button class="btn" onclick="showProjectPopup3()">TechStack Used</button>
+    
+                    <!-- Project Popup Container -->
+                    <div id="projectPopup3" class="popup-container">
+                        <div class="popup-content">
+                            <button style="font-size: 2px;font-weight: 2px;color:var(--main-color);background-color: var(--second-bg-color);border-radius: 50%;" 
+                            onclick="closeProjectPopup3()"><i class='bx bx-x'></i></button>
+                            <p>Technical Stack Used</p>
+                            <div class="Tech-content">
+                                <div class="html">
+                                    <i style="color:#c95d2e" class='bx bxl-html5' ></i>
+                                    <h2>HTML</h2>
+                                </div>
+                                <div class="html">
+                                    <i style="color:#147bbc" class='bx bxl-css3' ></i>
+                                    <h2>CSS</h2>
+                                </div>
+                                <div class="html">
+                                    <i style="color:#b0bc1e" class='bx bxl-javascript' ></i>
+                                    <h2>JavaScript</h2>
+                                </div>
+                                <div class="html">
+                                    <i style="color:#c32ec9" class='bx bxl-python' ></i>
+                                    <h2>Python</h2>
+                                </div>
+                                </div>    
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </section>
 
