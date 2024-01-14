@@ -91,3 +91,56 @@ function AboutMe() {
     document.getElementsByClassName('about-content')[0].innerHTML = aboutmeHTML;
     
 }
+
+
+//Certificate popup
+function showCertificate1() {
+    document.getElementById("certificatePopup1").style.display = "flex";
+    // ocument.getElementsByClassName("certifiactePopup-container")[0].style.left = "500px"/;
+}
+
+function closeCertificate1() {
+    document.getElementById("certificatePopup1").style.display = "none";
+}
+function showCertificate2() {
+    document.getElementById("certificatePopup2").style.display = "flex";
+}
+
+function closeCertificate2() {
+    document.getElementById("certificatePopup2").style.display = "none";
+}
+function showCertificate3() {
+    document.getElementById("certificatePopup3").style.display = "flex";
+}
+
+function closeCertificate3() {
+    document.getElementById("certificatePopup3").style.display = "none";
+}
+
+
+// Tech stack popup
+function showProjectPopup1() {
+    document.getElementById("projectPopup1").style.display = "flex";
+}
+
+function closeProjectPopup1() {
+    document.getElementById("projectPopup1").style.display = "none";
+}
+
+
+function showProjectPopup2() {
+    document.getElementById("projectPopup2").style.display = "flex";
+}
+
+function closeProjectPopup2() {
+    document.getElementById("projectPopup2").style.display = "none";
+}
+
+
+function showProjectPopup3() {
+    document.getElementById("projectPopup3").style.display = "flex";
+}
+
+function closeProjectPopup3() {
+    document.getElementById("projectPopup3").style.display = "none";
+}
