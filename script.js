@@ -60,3 +60,34 @@ const typed = new Typed('.multiple-text', {
     backDelay: 500,
     loop:true
 })
+
+function showEducation() {
+    var newHTML=
+    `<h2 class="heading">My <span>Education</span></h2>
+    <p>Pursuing a B.Tech in Computer Science with a specialization 
+    in <span>Artificial Intelligence and Machine Learning </span>at KMIT, 
+    I bring a solid academic foundation from JMJ School (10 CGPA in SSC) 
+    and Narayana College (98.5% in Intermediate).
+    Positioned at the intersection of technology and innovation, 
+    I am poised to contribute substantively to the fields of Artificial
+     Intelligence and Machine Learning, leveraging a blend of academic 
+     rigor and a passion for cutting-edge advancements.</p>
+    <button onclick="AboutMe()" class="btn">About Me</button>`
+document.getElementsByClassName('about-content')[0].innerHTML = newHTML;
+}
+function AboutMe() {
+    var aboutmeHTML = 
+    `
+    <h2 class="heading">About <span>Me</span></h2>
+    <h3>Passionate KMIT student</h3>
+    <p>Coding enthusiast, and problem 
+                    solver dedicated to mastering technology. I thrive on 
+                    xploring new tech horizons, consistently seeking opportunities to 
+                    innovate, learn, and contribute meaningfully to the world of software
+                     development. Eager to collaborate with like-minded individuals and engage 
+                     in projects that challenge and inspire. Let's build solutions, push boundaries, and make a positive impact together!</p>
+                <button onclick="showEducation()" class="btn">My Education</button>
+    `
+    document.getElementsByClassName('about-content')[0].innerHTML = aboutmeHTML;
+    
+}
