@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 
-
 *{
     margin:0;
     padding: 0;
@@ -212,11 +211,11 @@ span {
     margin: 2rem 0 3rem
 }
 
-.services h2 {
+.certificates h2 {
     margin-bottom: 5rem;
 }
 
-.services-container {
+.certificates-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,7 +223,7 @@ span {
     gap: 2rem;
 }
 
-.services-container .services-box {
+.certificates-container .certificates-box {
     flex: 1 1 30rem;
     background: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
@@ -235,24 +234,86 @@ span {
 
 }
 
-.services-container .services-box:hover {
+.certificates-container .certificates-box:hover {
     border-color: var(--main-color);
     transform: scale(1.02);
 }
 
-.services-box i {
+.certificates-box i {
     font-size: 7rem;
     color: var(--main-color);
 }
 
-.services-box h3 {
+.certificates-box h3 {
     font-size: 2.6rem;
 }
 
-.services-box p {
+.certificates-box p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
+
+
+/* Popup Styles */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    /* border: .4rem solid var(--text-color); */
+}
+
+.popup-content {
+    background: var(--bg-color);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: .4rem solid var(--text-color);
+    border-radius: 5%;
+}
+
+.Tech-content {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.certifiactePopup-container {
+    display: none;
+    position: fixed;
+    top: 105px;
+    width: 50%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.certifiactePopup-content {
+    background: var(--bg-color);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: .4rem solid var(--text-color);
+    border-radius: 5%;
+}
+
 
 .portfolio {
     background: var(--second-bg-color);
@@ -422,7 +483,7 @@ span {
         padding: 10rem 3% 2rem;
     }
 
-    .services {
+    .certificates {
         padding-bottom: 7rem; 
     }
 
@@ -491,7 +552,7 @@ span {
         margin-top: 4rem;
     }
 
-    .services h2 {
+    .certificates h2 {
         margin-bottom: 3rem;
     }
 
@@ -546,3 +607,6 @@ span {
         margin-top:2 rem;
     }
 }
+
+
+
