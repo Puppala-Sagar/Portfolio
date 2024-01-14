@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 
+
 *{
     margin:0;
     padding: 0;
@@ -85,6 +86,16 @@ section {
 .home-img img {
     width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
+    width:35vw;
+    height: 35vw;
+    border-radius: 50%;
+    overflow: hidden;
+    border: .4rem solid var(--main-color);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.home-img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
 }
 
 @keyframes floatImage {
@@ -168,8 +179,18 @@ span {
     background: var(--second-bg-color);
 }
 
+
 .about-img img {
-    width:35vw;
+    width:25vw;
+    height: 25vw;
+    border-radius: 50%;
+    overflow: hidden;
+    border: .4rem solid var(--text-color);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.about-img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
 }
 
 .heading {
