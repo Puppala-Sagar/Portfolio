@@ -4,13 +4,15 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatble" content="IE=edge">
         <meta name="viewport" content="'width=device-width, initial-scale=1.0">
-        <title>Responsive Personal Portfolio Website Design | P Sagar</title>
+        <title>Portfolio | Sagar Puppala</title>
 
+        <link rel="icon" href="images\url.png" type="image/x-icon">
         <!-- box icons  -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
         <!-- custom css-->
         <link rel="stylesheet" href="style.css">
+        
     </head>
 
     <body>
@@ -48,26 +50,26 @@
             </div>
 
             <div class="home-img">
-                <img src="images\home3.png" alt="">
+                <img src="images\aboutimg.jpg" alt="">
             </div>
         </section>
 
         <!-- about section design -->
         <section class="about" id="about">
-            <div class="about-img">
-                <img src="images\about.png" alt="">
+            <div class="about-img" id="circular-img">
+                <img src="images\aboutimg.jpg" alt="" >
             </div>
 
             <div class="about-content">
                 <h2 class="heading">About <span>Me</span></h2>
-                <h3>Student</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Facilis dignissimos laudantium neque veritatis officiis quidem 
-                    pariatur, odit sunt, veniam nam eveniet nulla! Accusamus commodi 
-                    facilis vel ex atque officiis, repellat minima, illum dolor sit porro 
-                    alias natus pariatur vero veritatis, dignissimos architecto accusantium. 
-                    Veritatis, blanditiis quibusdam?</p>
-                <a href="#" class="btn">Read More</a>
+                <h3>Passionate KMIT student</h3>
+                <p>Coding enthusiast, and problem 
+                    solver dedicated to mastering technology. I thrive on 
+                    xploring new tech horizons, consistently seeking opportunities to 
+                    innovate, learn, and contribute meaningfully to the world of software
+                     development. Eager to collaborate with like-minded individuals and engage 
+                     in projects that challenge and inspire. Let's build solutions, push boundaries, and make a positive impact together!</p>
+                <button onclick="showEducation()" class="btn">My Education</button>
             </div>
         </section>
 
@@ -111,40 +113,44 @@
 
             <div class="portfolio-container">
                 <div class="portfolio-box">
+                    <img src="images\physics.jpeg" alt="">
+                    <div class="portfolio-layer">
+                        <h4 style="font-size: 220%;">Physics Virtual Lab</h4>
+                        <p style="font-size: 140%;">Engineered an interactive platform empowering 
+                            students to conduct diverse experiments virtually, optimizing the learning 
+                            journey for enriched educational engagement.
+                        </p>
+                        <a href="https://ep-vlabs-kmit.onrender.com"><i class='bx bx-link-external' ></i></a>
+
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images\osmania.webp" alt="">
+                    <div class="portfolio-layer">
+                        <h4 style="font-size: 200%;">Data Automation</h4>
+                        <p style="font-size: 120%;">Contributed significantly to OSMANIA UNIVERSITY-affiliated colleges by developing a 
+                            user-friendly website. simplifying access to student results through downloadable 
+                            spreadsheets. Improved efficiency for educational institutions.
+                        </p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images\cyber.jpeg" alt="">
+                    <div class="portfolio-layer">
+                        <h4 style="font-size: 200%;">System Compromiser</h4>
+                        <p style="font-size: 120%;">Contributed to a cybersecurity project aimed at assessing system security, providing insights into potential 
+                            compromises for enhanced awareness.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
                     <img src="images\portfolio1.jpeg" alt="">
-                    <div class="portfolio-layer">
-                        <h4>Web Design</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                            Aspernatur, excepturi?</p>
-                        <a href="#"><i class='bx bx-link-external' ></i></a>
-
-                    </div>
-                </div>
-
-                <div class="portfolio-box">
-                    <img src="images\portfolio2.jpeg" alt="">
-                    <div class="portfolio-layer">
-                        <h4>Web Design</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                            Aspernatur, excepturi?</p>
-                        <a href="#"><i class='bx bx-link-external' ></i></a>
-
-                    </div>
-                </div>
-
-                <div class="portfolio-box">
-                    <img src="images\portfolio1.jpeg" alt="">
-                    <div class="portfolio-layer">
-                        <h4>Web Design</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                            Aspernatur, excepturi?</p>
-                        <a href="#"><i class='bx bx-link-external' ></i></a>
-
-                    </div>
-                </div>
-
-                <div class="portfolio-box">
-                    <img src="images\portfolio4.jpeg" alt="">
                     <div class="portfolio-layer">
                         <h4>Web Design</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -191,7 +197,7 @@
                     <input type="number" placeholder="Mobile Number">
                     <input type="text" placeholder="Email Subject">
                 </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </form>
         </section>
