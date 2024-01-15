@@ -293,7 +293,9 @@ span {
     color: #333;
 }
 
-.certifiactePopup-container {
+.certifiactePopup-container1,
+.certifiactePopup-container2,
+.certifiactePopup-container3{
     display: none;
     position: fixed;
     top: 105px;
@@ -303,6 +305,16 @@ span {
     justify-content: center;
     align-items: center;
     z-index: 1;
+}
+.certifiactePopup-container1{left:500px;}
+.certifiactePopup-container2{left:100px;}
+.certifiactePopup-container3{right:500px;}
+
+.certifiactePopup-container1 img,
+.certifiactePopup-container2 img,
+.certifiactePopup-container3 img {
+    height: 400px;
+    width:800px
 }
 
 .certifiactePopup-content {
@@ -472,6 +484,9 @@ span {
     html{
         font-size: 55%;
     }
+    .certifiactePopup-container1{left:400px;}
+    .certifiactePopup-container2{left:100px;}
+    .certifiactePopup-container3{right:400px;}
 }
 
 @media (max-width: 991px) {
@@ -486,6 +501,10 @@ span {
     .certificates {
         padding-bottom: 7rem; 
     }
+
+    .certifiactePopup-container1{right:225px;}
+    .certifiactePopup-container2{left:100px;}
+    .certifiactePopup-container3{left:-225px;}
 
     .portfolio {
         padding-bottom: 7rem;
@@ -540,7 +559,7 @@ span {
 
     .home-img img {
         width: 70vw;
-        height:70vw;
+        /* height:50vw; */
         margin-top: 4rem;
     }
 
@@ -553,6 +572,14 @@ span {
         height:70vw;
         margin-top: 4rem;
     }
+
+    .certifiactePopup-container1{left:280px;}
+    .certifiactePopup-container2{left:-80px;}
+    .certifiactePopup-container3{left:170px;}
+
+    .certifiactePopup-container1 img,
+    .certifiactePopup-container2 img,
+    .certifiactePopup-container3 img{width:500px;height:300px;}
 
     .certificates h2 {
         margin-bottom: 3rem;
@@ -579,6 +606,15 @@ span {
         text-align: center;
         margin-top:2 rem;
     }
+
+    .certifiactePopup-container1{left:220px;}
+    .certifiactePopup-container2{left:-60px;}
+    .certifiactePopup-container3{left:140px;}
+
+    .certifiactePopup-container1 img,
+    .certifiactePopup-container2 img,
+    .certifiactePopup-container3 img{width:400px;height:200px;}
+
 }
 
 @media (max-width: 450px) {
@@ -592,13 +628,6 @@ span {
 }
 
 @media (max-width: 365px) {
-    .home-img img {
-        width: 90vw;
-    }
-
-    .about-img img {
-        width: 90vw;
-    }
 
     .footer {
         flex-direction: column-reverse;
