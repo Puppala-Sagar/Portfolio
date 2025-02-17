@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatble" content="IE=edge">
+        <meta name="viewport" content="'width=device-width, initial-scale=1.0">
+        <title>Portfolio | Sagar Puppala</title>
+
+        <link rel="icon" href="images\url.png" type="image/x-icon">
+        <!-- box icons  -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- custom css-->
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="#" class="logo">Portfolio</a>
+
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#certificates">Achievements</a>
+                <a href="#portfolio">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- home section design -->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hello,It's Me</h3>
+                <h1>Sagar Puppala</h1>
+                <!-- <h3>And I'm a <span>Student</span></h3> -->
+                <h3>And I'm a <span class="multiple-text"></span></h3>
+                <h3>Explore my digital space where curiosity meets code.</h3>
+                <div class="social-media">
+                    <a href="https://github.com/Puppala-Sagar"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/puppala-sagar/"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://twitter.com/Sagar31012004"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.instagram.com/sagarpuppala1231/"><i class='bx bxl-instagram-alt' ></i></a>
+                </div>
+                <a href="Puppala_Sagar.pdf" class="btn">Download CV</a>
+            </div>
+
+            <div class="home-img">
+                <img src="images\xyz.jpg" alt="">
+            </div>
+        </section>
+
+        <!-- about section design -->
+        <section class="about" id="about">
+            <div class="about-img" id="circular-img">
+                <img src="images\aboutimg.jpg" alt="" >
+            </div>
+
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3>Passionate KMIT student</h3>
+                <p>Coding enthusiast, and problem 
+                    solver dedicated to mastering technology. I thrive on 
+                    xploring new tech horizons, consistently seeking opportunities to 
+                    innovate, learn, and contribute meaningfully to the world of software
+                     development. Eager to collaborate with like-minded individuals and engage 
+                     in projects that challenge and inspire. Let's build solutions, push boundaries, and make a positive impact together!</p>
+                <button onclick="showEducation()" class="btn">My Education</button>
+            </div>
+        </section>
+
+        <!-- certificates section design -->
+        <section class="certificates" id="certificates">
+            <h2 class="heading">My <span>Achievements</span></h2>
+            <div class="certificates-container">
+                <div class="certificates-box">
+                    <i class='bx bx-code-alt' ></i>
+                    <h3>Best First Year Team</h3>
+                    <p>In my inaugural year, my healthcare project stood out, catapulting our team to the coveted title of <span>'Best First-Year Team'</span> 
+                        a testament to our exceptional achievements in Semester 1.
+                    </p>
+                    <!-- <a href="certificates\inov8.pdf" class="btn">View Certificate</a> -->
+                    <button class="btn" onclick="showCertificate1()">View Certificate</button>
+
+
+                    <!-- Certificate popup -->
+                    <div class="certifiactePopup-container1" id="certificatePopup1" >
+                        <div class="certifiactePopup-content" >
+                            <button style="font-size: 2px;font-weight: 2px;color:var(--main-color);background-color: var(--second-bg-color);border-radius: 50%;" 
+                            onclick="closeCertificate1()"><i class='bx bx-x'></i></button>
+                            <h1>Inov8<span> Certificate</span></h1>
+                            <img src="images\inov8.jpg"  alt="" >
+
+                        </div>
+                    </div>
+
+
+                    <br>
+                    <br>
+                    <button class="btn" onclick="showProjectPopup1()">TechStack Used</button>
+
+                    <!-- Project Popup Container -->
+                    <div id="projectPopup1" class="popup-container">
+                        <div class="popup-content">
+                            <button style="font-size: 2px;font-weight: 2px;color:var(--main-color);background-color: var(--second-bg-color);border-radius: 50%;" 
+                            onclick="closeProjectPopup1()"><i class='bx bx-x'></i></button>
+                            <p>Technical Stack Used</p>
+                            <div class="Tech-content">
+                                <div class="html">
+                                    <i style="color:#c95d2e" class='bx bxl-html5' ></i>
+                                    <h2>HTML</h2>
+                                </div>
+                                <div class="html">
+                                    <i style="color:#147bbc" class='bx bxl-css3' ></i>
+                                    <h2>CSS</h2>
+                                </div>
+                                <div class="html">
+                                    <i style="color:#b0bc1e" class='bx bxl-javascript' ></i>
+                                    <h2>JavaScript</h2>
+                                </div>
+                                </div>    
+                        </div>
+                    </div>
+                </div>
+       
+                <div class="certificates-box">
+                    <i class='bx bxs-paint' ></i>
+                    <h3>Code Purple Triumph</h3>
+                    <p>Revealing groundbreaking software innovation, our project at <span>CODE PURPLE Project 
+                        EXPO organized by IEEE WIE MJCET
+                        secured 1st prize</span>, reshaping excellence in software development.</p>
+                    <!-- <a href="certificates\mjcet.pdf" class="btn">View Certificate</a> -->
+                    <button class="btn" onclick="showCertificate2()">View Certificate</button>
+
+
+                    <!-- Certificate popup -->
+                    <div class="certifiactePopup-container2" id="certificatePopup2">
+                        <div class="certifiactePopup-content">
+                            <button style="font-size: 2px;font-weight: 2px;color:var(--main-color);background-color: var(--second-bg-color);border-radius: 50%;" 
+                            onclick="closeCertificate2()"><i class='bx bx-x'></i></button>
+                            <h1>Code Purple <span>Certificate</span></h1>
+                            <img src="images\mjcetimg.jpg"  alt="" >
+
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+                    <button class="btn" onclick="showProjectPopup2()">TechStack Used</button>
+
+                    <!-- Tech Stack Popup Container -->
+                    <div id="projectPopup2" class="popup-container">
+                        <div class="popup-content">
+                            <button style="font-size: 2px;font-weight: 2px;color:var(--main-color);background-color: var(--second-bg-color);border-radius: 50%;" 
+                            onclick="closeProjectPopup2()"><i class='bx bx-x'></i></button>
+                            <p>Technical Stack Used</p>
+                            <div class="Tech-content">
+                                <div class="html">
+                                    <i style="color:#c95d2e" class='bx bxl-html5' ></i>
+                                    <h2>HTML</h2>
+                                </div>
+                                <div class="html">
+                                    <i style="color:#147bbc" class='bx bxl-css3' ></i>
+                                    <h2>CSS</h2>
+                                </div>
+                                <div class="html">
+                                    <i style="color:#b0bc1e" class='bx bxl-javascript' ></i>
+                                    <h2>JavaScript</h2>
+                                </div>
+                                <div class="html">
+                                    <i style="color:#c32ec9" class='bx bxl-python' ></i>
+                                    <h2>Python</h2>
+                                </div>
+                                </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificates-box">
+                    <i class='bx bx-bar-chart-alt'></i>
+                    <h3>Elevating Excellence</h3><br>
+                    <p>Claimed <br><span>Successive 1st Prizes</span><br> in Physics and Python Realms at KMIT's Prakalp Project Expo, 
+                        Elevating Innovation to New Heights.</p>
+                    <!-- <a href="certificates\prakalp.pdf" class="btn">View Certificate</a> -->
+                    <button class="btn" onclick="showCertificate3()">View Certificate</button>
+
+
+                    <!-- Certificate popup -->
+                    <div class="certifiactePopup-container3" id="certificatePopup3">
+                        <div class="certifiactePopup-content">
+                            <button style="font-size: 2px;font-weight: 2px;color:var(--main-color);background-color: var(--second-bg-color);border-radius: 50%;" 
+                            onclick="closeCertificate3()"><i class='bx bx-x'></i></button>
+                            <h1>Prakalp <span>Certificate</span></h1>
+                            <img src="images\prakalp.png"  alt="" >
+
+                        </div>
+                    </div>
+
+
+                    <br>
+                    <br>
+                    <button class="btn" onclick="showProjectPopup3()">TechStack Used</button>
+    
+                    <!-- Project Popup Container -->
+                    <div id="projectPopup3" class="popup-container">
+                        <div class="popup-content">
+                            <button style="font-size: 2px;font-weight: 2px;color:var(--main-color);background-color: var(--second-bg-color);border-radius: 50%;" 
+                            onclick="closeProjectPopup3()"><i class='bx bx-x'></i></button>
+                            <p>Technical Stack Used</p>
+                            <div class="Tech-content">
+                                <div class="html">
+                                    <i style="color:#c95d2e" class='bx bxl-html5' ></i>
+                                    <h2>HTML</h2>
+                                </div>
+                                <div class="html">
+                                    <i style="color:#147bbc" class='bx bxl-css3' ></i>
+                                    <h2>CSS</h2>
+                                </div>
+                                <div class="html">
+                                    <i style="color:#b0bc1e" class='bx bxl-javascript' ></i>
+                                    <h2>JavaScript</h2>
+                                </div>
+                                <div class="html">
+                                    <i style="color:#c32ec9" class='bx bxl-python' ></i>
+                                    <h2>Python</h2>
+                                </div>
+                                </div>    
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Portfolio section design -->
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Latest <span>Project</span></h2>
+
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="images/SkillForge.png" alt="" style="height: 200px">
+                    <div class="portfolio-layer">
+                        <h4 style="font-size: 220%;">SkillForge</h4>
+                        <p style="font-size: 140%;">Developed a MERN-based learning platform using GROQ, featuring quizzes, a "Chat with PDF" tool, note-taking, and YouTube integration for learning.
+                        </p>
+                        <a href="https://github.com/Puppala-Sagar/SkillForge"><i class='bx bx-link-external' ></i></a>
+
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images\BeastCancer.png" alt="" style="height: 200px">
+                    <div class="portfolio-layer">
+                        <h4 style="font-size: 220%;">Breast Cancer Detection</h4>
+                        <p style="font-size: 140%;">Developed an AI application for breast cancer detection using EfficientNet and U-Net, integrated with VR for medical analysis and learning.
+                        </p>
+                        <a href="https://github.com/Puppala-Sagar/Breast-Cancer-Detection/tree/main/breast_tumor_detection_vr-main"><i class='bx bx-link-external' ></i></a>
+
+                    </div>
+                </div>
+
+                <!-- <div class="portfolio-box">
+                    <img src="images\physics.jpeg" alt="">
+                    <div class="portfolio-layer">
+                        <h4 style="font-size: 220%;">Physics Virtual Lab</h4>
+                        <p style="font-size: 140%;">Engineered an interactive platform empowering 
+                            students to conduct diverse experiments virtually, optimizing the learning 
+                            journey for enriched educational engagement.
+                        </p>
+                        <a href="https://ep-vlabs-kmit.onrender.com"><i class='bx bx-link-external' ></i></a>
+
+                    </div>
+                </div> -->
+                <div class="portfolio-box">
+                    <img src="images\physics.jpeg" alt="">
+                    <div class="portfolio-layer">
+                        <h4 style="font-size: 220%;">Physics Virtual Lab</h4>
+                        <p style="font-size: 140%;">Engineered an interactive platform empowering 
+                            students to conduct diverse experiments virtually, optimizing the learning 
+                            journey for enriched educational engagement.
+                        </p>
+                        <a href="https://ep-vlabs-kmit.onrender.com"><i class='bx bx-link-external' ></i></a>
+
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images\osmania.webp" alt="">
+                    <div class="portfolio-layer">
+                        <h4 style="font-size: 200%;">Data Automation</h4>
+                        <p style="font-size: 120%;">Contributed significantly to OSMANIA UNIVERSITY-affiliated colleges by developing a 
+                            user-friendly website. simplifying access to student results through downloadable 
+                            spreadsheets. Improved efficiency for educational institutions.
+                        </p>
+                        <a href="https://ou-ngit-kmit-rywa.onrender.com"><i class='bx bx-link-external' ></i></a>
+
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images\cyber.jpeg" alt="">
+                    <div class="portfolio-layer">
+                        <h4 style="font-size: 200%;">System Compromiser</h4>
+                        <p style="font-size: 120%;">Contributed to a cybersecurity project aimed at assessing system security, providing insights into potential 
+                            compromises for enhanced awareness.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+
+                    </div>
+                </div>
+
+                <!-- <div class="portfolio-box">
+                    <img src="images\portfolio1.jpeg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Aspernatur, excepturi?</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images\portfolio1.jpeg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Aspernatur, excepturi?</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images\portfolio6.jpeg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Aspernatur, excepturi?</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- contact section design -->
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me!</span></h2>
+
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Subject">
+                </div>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </section>
+
+        <!-- footer design -->
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by Sagar Puppala | All Rights Reserved.</p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+            </div>
+        </footer>
+
+        <!-- scroll reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!-- typed js -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <!-- cutsom js -->
+        <script src="script.js"></script>
+    </body>
+</html>
